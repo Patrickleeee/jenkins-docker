@@ -1,0 +1,5 @@
+20:11:29.721 622769005 [Thread-14] INFO  o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54a67a45: startup date [Wed Mar 21 15:12:01 CST 2018]; root of context hierarchy
+20:11:29.776 622769060 [Thread-14] INFO  o.s.c.s.DefaultLifecycleProcessor - Stopping beans in phase 0
+20:11:29.826 622769110 [Thread-14] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans on shutdown
+20:11:29.827 622769111 [Thread-14] INFO  o.s.b.a.e.jmx.EndpointMBeanExporter - Unregistering JMX-exposed beans
+20:11:29.829 622769113 [Thread-14] INFO  o.s.j.e.a.AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
