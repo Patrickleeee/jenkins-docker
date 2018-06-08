@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.patrick</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>jenkins-docker</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>demo</name>
+    <name>jenkins-docker</name>
     <description>a back-end restful service for font-end</description>
 
     <!--parent dependency-->

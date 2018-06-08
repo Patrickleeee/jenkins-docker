@@ -1,6 +1,7 @@
 package com.demo.model.dto;
 
 import com.demo.model.User;
+import com.google.common.collect.Sets;
 import lombok.Getter;
 import lombok.ToString;
 import org.apache.commons.collections4.CollectionUtils;
@@ -43,7 +44,11 @@ public class CustomUserDetails extends User implements UserDetails {
             this.accountNonExpired = accountNonExpired;
             this.credentialsNonExpired = credentialsNonExpired;
             this.accountNonLocked = accountNonLocked;
-            this.authorities = Collections.unmodifiableSet(new HashSet<>(CollectionUtils.emptyIfNull(authorities)));
+            Set<GrantedAuthority> set = Sets.newHashSet();
+            if (authorities != null || authorities.size() > 0) {
+                set.addAll(authorities);
+            }
+            this.authorities = Collections.unmodifiableSet(set);
         } else {
             throw new IllegalArgumentException("Cannot pass null or empty values to constructor");
         }
