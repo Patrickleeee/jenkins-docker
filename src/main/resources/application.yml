@@ -38,7 +38,7 @@ spring:
 ms:
   db:
     driverClassName: com.mysql.jdbc.Driver
-    url: jdbc:mysql://172.31.67.211:3306/risk_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
-    username: risk
-    password: QxI^$pff92O$
+    url: jdbc:mysql://localhost:3306/risk_db?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: leee
+    password: cGF0cml3mlZWU=
     maxActive: 500
