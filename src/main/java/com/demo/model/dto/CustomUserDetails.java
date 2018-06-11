@@ -44,11 +44,12 @@ public class CustomUserDetails extends User implements UserDetails {
             this.accountNonExpired = accountNonExpired;
             this.credentialsNonExpired = credentialsNonExpired;
             this.accountNonLocked = accountNonLocked;
-            Set<GrantedAuthority> set = Sets.newHashSet();
-            if (authorities != null || authorities.size() > 0) {
-                set.addAll(authorities);
-            }
-            this.authorities = Collections.unmodifiableSet(set);
+//            Set<GrantedAuthority> set = Sets.newHashSet();
+//            if (authorities != null || authorities.size() > 0) {
+//                set.addAll(authorities);
+//            }
+//            this.authorities = Collections.unmodifiableSet(set);
+            this.authorities = Collections.unmodifiableSet(new HashSet<>(CollectionUtils.emptyIfNull(authorities)));
         } else {
             throw new IllegalArgumentException("Cannot pass null or empty values to constructor");
         }
