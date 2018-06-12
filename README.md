@@ -1,10 +1,10 @@
-#jenkins配置
+# jenkins配置
 
-##Build  
+## Build  
         Root POM: pom.xml
         Goals and options: clean package docker:build
         
-##Post Steps-执行shell
+## Post Steps-执行shell
 `注意1：在服务器上，将jenkins用户加入到docker用户组中，否则无权限操作`<br>
 ```Bash
 usermod -a -G docker jenkins
