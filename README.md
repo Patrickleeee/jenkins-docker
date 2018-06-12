@@ -22,3 +22,15 @@
     
         普通jar包自动化发布，参见分支Version-1.0，内含脚本
         打包成镜像，放置在docker容器内发布，参见分支Version-1.1，内含脚本
+        
+* 参考资料
+
+    [mysql安装教程](https://www.cnblogs.com/bigbrotherer/p/7241845.html) <br>
+    [git安装教程](https://blog.csdn.net/u014066037/article/details/70224780) <br>
+    [maven安装教程](https://www.cnblogs.com/taomylife/p/7997814.html) <br>
+    [jenkins安装教程](https://blog.csdn.net/linjingke32/article/details/77799878) <br>
+    [jenkins离线问题](https://blog.csdn.net/txyzqc/article/details/77885367) <br>
+    [jenkins配置教程](http://baijiahao.baidu.com/s?id=1589036484535314228&wfr=spider&for=pc) <br>
+    [docker安装教程](https://yeasy.gitbooks.io/docker_practice/content/install/centos.html) <br>
+    
+    
