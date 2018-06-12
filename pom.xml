@@ -198,6 +198,7 @@
                     <fork>true</fork>
                 </configuration>
             </plugin>
+            <!--本地打包成jar可忽略下面的docker镜像打包-->
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
