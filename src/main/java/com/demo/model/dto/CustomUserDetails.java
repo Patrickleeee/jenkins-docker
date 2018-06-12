@@ -1,16 +1,16 @@
 package com.demo.model.dto;
 
 import com.demo.model.User;
-import com.google.common.collect.Sets;
 import lombok.Getter;
 import lombok.ToString;
 import org.apache.commons.collections4.CollectionUtils;
-import org.apache.commons.collections4.collection.UnmodifiableCollection;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
-import java.util.*;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Set;
 import java.util.stream.Collectors;
 
 /**
@@ -43,11 +43,6 @@ public class CustomUserDetails extends User implements UserDetails {
             this.accountNonExpired = accountNonExpired;
             this.credentialsNonExpired = credentialsNonExpired;
             this.accountNonLocked = accountNonLocked;
-//            Set<GrantedAuthority> set = Collections.unmodifiableSet(Sets.newHashSet());
-//            this.authorities = Collections.unmodifiableSet(set);
-//            if (authorities != null || authorities.size() > 0) {
-//                set.addAll(authorities);
-//            }
             this.authorities = Collections.unmodifiableSet((CollectionUtils.emptyIfNull(authorities)).stream().collect(Collectors.toSet()));
         } else {
             throw new IllegalArgumentException("Cannot pass null or empty values to constructor");
