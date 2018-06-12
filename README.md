@@ -1,10 +1,10 @@
-#jenkins配置
+# jenkins配置
 
-##Build  
+## Build  
         Root POM: pom.xml
         Goals and options: clean install
         
-##Post Steps-执行shell
+## Post Steps-执行shell
 `注意1：/opt/script/jenkins-docker目录可自行创建作为脚本的目录`<br>
 ```Bash
 #!/bin/bash
