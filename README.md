@@ -20,8 +20,8 @@
         
 * 说明
     
-        分支Version-1.0：普通jar包自动化发布，内含脚本
-        分支Version-1.1：打包成镜像，放置在docker容器内发布，内含脚本
+        分支Version-1.0：普通jar包，自动发布，内含脚本
+        分支Version-1.1：打包成镜像，放置在服务器docker容器内，自动发布，内含脚本
         分支Version-1.2：mybatis-generator插件（pom中注释了）
         
 * 参考资料
